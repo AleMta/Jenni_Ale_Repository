@@ -9,22 +9,26 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
 
 
-<form action="">
-<label for="">Name</label>
-<input type="text" id="name">
+<form id="survey-form" action="">
+
+<label id="name-label" for="">Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
 <br>
-<label for="">Email</label>
-<input type="text" id="Email">
+
+<label id="email-label" for="">Email</label>
+<input type="email" id="email" placeholder="Enter your e-amil" required>
 <br>
-<label for="">Age(optional)</label>
-<input type="number" id="Age">
+
+<label id="number-label" for="">Age(optional)</label>
+<input type="number" id="number" min="18" max="99" placeholder="Enter your age">
 <br>
+
 <!-- <label for=""></label>
 <input type="text" id="select current role"> -->
-<select multiple name="drawfs" id="drawfs"> 
+<select multiple name="drawfs" id="dropdown"> 
   <label>Which option best describes your current role?</label>
   <option>Student</option>
   <option>Full Time Job</option>
@@ -36,11 +40,11 @@
 <label>Would you recommend freeCodeCamp to a friend?
   <br>
 
-<input type="checkbox">
+<input name="attribute" type="radio" value="Definitely">
 <br>
-<input type="checkbox">
+<input name="attribute" type="radio" value="Maybe">
 <br>
-<input type="checkbox">
+<input name="attribute" type="radio" value="Not sure">
 </label>
 <br>
 <select multiple name="drawfs" id="drawfs"> 
@@ -54,37 +58,42 @@
 <label> What would you like to see improved? (Check all that apply)
 <br>
 <label>Front-end Projects</label>
-<input type="checkbox">
+<input type="checkbox" value="Front-end Projects">
 <br>
 <label>Back-end Projects</label>
-<input type="checkbox">
+<input type="checkbox" value="Back-end Projects">
 <br>
 <label>Data Visualization</label>
-<input type="checkbox">
+<input type="checkbox" value="Data Visualization">
 <br>
 <label>Challenges</label>
-<input type="checkbox">
+<input type="checkbox" value="Challenges">
 <br>
 <label>Open Source Community</label>
-<input type="checkbox">
+<input type="checkbox" value="Open Source Community">
 <br>
 <label>Gitter help rooms</label>
-<input type="checkbox">
+<input type="checkbox" value="Gitter help rooms">
 <br>
 <label>Videos</label>
-<input type="checkbox">
+<input type="checkbox" value="Videos">
 <br>
 <label>City Meetups</label>
-<input type="checkbox">
+<input type="checkbox" value="City Meetups">
 <br>
 <label>Wiki</label>
-<input type="checkbox">
+<input type="checkbox" value="Wiki">
 <br>
 <label>Forum</label>
-<input type="checkbox">
+<input type="checkbox" value="Forum">
 <br>
 <label>Aditional Courses</label>
-<input type="checkbox">
+<input type="checkbox" value="Aditional Courses">
+<br>
+
+<textarea name="comments" id="text-area" cols="30" rows="10"></textarea>
+<br>
+<input id="submit" type="submit" value="Submit" />
 
 </form>
     <!--

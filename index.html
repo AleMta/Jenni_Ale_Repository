@@ -13,6 +13,7 @@
 
 
 <form id="survey-form" action="">
+  <div class="form">
 
 <label id="name-label" for="">Name</label>
 <input type="text" id="name" placeholder="Enter your name" required>
@@ -39,12 +40,14 @@
 <br>
 <label>Would you recommend freeCodeCamp to a friend?
   <br>
-
-<input name="attribute" type="radio" value="Definitely">
+  <input name="attribute" type="radio" value="Definitely">
+<label for="">Definitely</label>
 <br>
 <input name="attribute" type="radio" value="Maybe">
+<label for="">Maybe</label>
 <br>
 <input name="attribute" type="radio" value="Not sure">
+<label for="">Not sure</label>
 </label>
 <br>
 <select multiple name="drawfs" id="drawfs"> 
@@ -94,7 +97,7 @@
 <textarea name="comments" id="text-area" cols="30" rows="10"></textarea>
 <br>
 <input id="submit" type="submit" value="Submit" />
-
+</div>
 </form>
     <!--
 
